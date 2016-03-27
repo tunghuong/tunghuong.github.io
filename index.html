@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>T<3H</title>
+<style type="text/css">
+html {
+	background:
+		url("http://www.pixelstalk.net/wp-content/uploads/2016/03/Heart-in-Love-Wallpaper-HD.jpg")
+		no-repeat center center fixed;
+	background
+	-
+	size
+	:
+	cover;
+}
+
+#imgArea {
+	width: 100%;
+	height: 320px;
+	margin-left: 15%;
+	margin-top: 10%;
+	float: center;
+	margin-right: 15%;
+}
+
+#heart {
+	width: 10%;
+	height: auto;
+	margin-left: 5%;
+	margin-right: 5%;
+	vertical-align: middle;
+}
+
+.img {
+	width: 25%;
+	height: auto;
+	vertical-align: middle;
+	height: auto;
+}
+
+#numDate {
+	width: 100%;
+	margin-top: 10%; line-height : 20%;
+	float: center;
+	word-wrap: break-word;
+	font-size: 2.5em;
+	color: #FF5722;
+	text-align: center;
+	vertical-align: center;
+	font: "Arial";
+	line-height: 20%;
+}
+</style>
+</head>
+<body>
+	<div id="imgArea">
+		<img id="img_Tung" class="img" alt="Tung"
+			src="https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10685417_959744227377505_2426078632912161996_n.jpg?oh=6def268ac7a48b98f3a8eaa241ee2e7b&oe=57879B54">
+		<img id="heart" alt="heart"
+			src="http://nobacks.com/wp-content/uploads/2014/11/Love-Heart-9-500x453.png">
+		<img id="img_Huong" class="img" alt="Huong"
+			src="https://lh6.googleusercontent.com/-LTvh6KXQJo8/VqWtgTCB8UI/AAAAAAAAAFk/Eb1Hahdn3LMq7Yox_u2yK9FeKTmY9vK6A/w720-h721-no/12204901_1735049413381281_599555691_n.jpg">
+	</div>
+	<p id="numDate">365 days</p>
+</body>
+<script type="text/javascript">
+	function getDaysBetween(date1, date2) {
+		return Math.round((date2 - date1) / (24 * 60 * 60 * 1000));
+	}
+	function update_date() {
+		var start = new Date("2016 january 05");
+		var now = new Date();
+		document.getElementById("numDate").innerHTML = getDaysBetween(start,
+				now);
+	}
+	function main() {
+		update_date();
+	}
+	main();
+</script>
+</html>
